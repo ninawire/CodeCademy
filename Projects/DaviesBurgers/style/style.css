@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+nav > img {
+    display: block;
+    width: 180px;
+    margin: auto;
+}
