@@ -5,6 +5,10 @@
     --font1: 'Nunito', sans-serif;
     --font2: 'Raleway', sans-serif;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 html, 
 body {
     font-family: var(--font2);
@@ -34,7 +38,7 @@ li > a {
 }
 main {
     position: relative;
-    top: 120px;
+    top: 85px;
     text-align: center;
     font-size: 2em;
 }
@@ -44,11 +48,13 @@ main > div {
 }
 #top h1 {
     color: #727074;
+    padding-top: 50px;
 }
 #top button {
     color: white;
     background-color: #727074;
     font-size: 0.6em;
+    margin-top: 30px;
     padding: 20px 40px;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.378);
 }
