@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;600&family=Martel+Sans:wght@200&display=swap');
+
+:root{
+    --font1: 'Akshar', sans-serif;
+    --font2: 'Martel Sans', sans-serif;
+
+    --cor1: #FBE7C6;
+    --cor2: #B4F8C8;
+    --cor3: #b4f8c99d;
+    --cor4: #A0E7E5;
+    --cor5: #a1e8e59d;
+    --cor6: #FFAEBC;
+    --cor7: #ffaebc9d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: var(--font1);
+    color: var(--cor1);
+    background: white url(../material/pic1.png) top center no-repeat;
+    width: 100vw;
+    font-size: 2.3em;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.366);
+    padding: 50px 0px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: var(--font2);
+    font-size: 2em;
+    padding: 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.621);
+}
+
+img {
+    margin: 10px 0px 0px 10px;
+}
+
+h3 {
+    font-family: var(--font2);
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+p {
+    padding: 5px 20px 0px 10px;
+    text-align: justify;
+}
+
+.brushes h2 {
+    background-image: linear-gradient(to right, var(--cor2), white);
+    color: var(--cor3);
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+.brushes span {
+    color: #79af8a;
+}
+
+.frames h2 {
+    background-image: linear-gradient(to right, var(--cor6), white);
+    color: var(--cor7);
+}
+
+.frames span {
+    color: #db94a0;
+}
+
+.paints h2 {
+    background-image: linear-gradient(to right, var(--cor4), white);
+    color: var(--cor5);
+}
+
+.paints span {
+    color: rgb(82, 139, 137);
+}
