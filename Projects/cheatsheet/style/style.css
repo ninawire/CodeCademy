@@ -106,7 +106,9 @@ li {
     border-radius: 20px;
 }
 
-.selectors p {
+.selectors p,
+.examples-main,
+.exercises-main {
     text-align: center;
     font-size: 1.4em;
     line-height: 1.4em;
@@ -117,6 +119,25 @@ li {
     text-align: center;
     font-size: 1.4em;
     line-height: 1.4em;
+}
+
+.show-example {
+    display: block;
+    width: 400px;
+    background-color: var(--color2);
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+    color: var(--color4);
+}
+
+.indent {
+    text-indent: 40px;
+}
+
+h3 {
+    margin-top: 20px;
 }
 
 footer {
