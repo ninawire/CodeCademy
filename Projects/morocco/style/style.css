@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display:wght@400;600&family=Tangerine:wght@400;700&display=swap');
+
+:root {
+    --font1: 'Bree Serif', serif;
+    --font2: 'Playfair Display', serif;
+    --font3: 'Tangerine', cursive;
+
+    --color1: #124352;
+    --color2: #FEE7DA;
+    --color3: #10B0D8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    color: var(--color2)
+}
+
+header {
+    font-family: var(--font1);
+    text-align: center;
+    min-height: 5rem;
+    background-color: white;
+    padding-top: 3rem;
+}
+
+header > h2 {
+    display: inline;
+    padding-right: 3em;
+    text-shadow: .5px .5px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    display: inline-block;
+    margin: auto;
+}
+
+nav a {
+    padding: 1em;
+    color: var(--color1);
+}
+
+.banner {
+    background-size: cover;
+    background: url(../material/banner.png) center center no-repeat;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    color: var(--color2);
+    font-size: 8rem;
+    padding-top: 5rem;
+}
+
+.banner h2 {
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.photo {
+    width: 75%;
+    padding: 1.11rem;
+    border-radius: 5px;
+    margin: 0 auto 4.44rem auto;
+    background-color: white;
+}
+
+.photo .image-container {
+    overflow: hidden;
+    margin-bottom: 1.11rem;
+}
+
+.photo .image-container img {
+    width: 100%;
+}
+
+.caption {
+    font-family: var(--font3);
+    font-size: 3em;
+}
+
+.first.photo {
+    position: relative;
+    top: -3rem;
+    margin-bottom: 1.6rem;
+}
+
+.journal p {
+    padding-bottom: 2.77rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.journal .first-letter {
+    float: left;
+    padding-right: 1.4rem;
+    font-family: var(--font2);
+    font-size: 7.44rem;
+    color: var(--color3);
+}
+
+.quotecontain {
+    width: 100%;
+}
+.quote {
+    font-family: var(--font2);
+    display: block;
+    padding: 3rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    text-align: center;
+    font-size: 3.55rem;
+    font-weight: 800;
+    max-width: fit-content;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
+    background-color: #212121;
+  }
+  
+  footer .image-container {
+    width: 400px;
+  }
+  
+  footer .content {
+    flex-grow: 1;
+    font-style: italic;
+    color: #9b9b9b;
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    color: var(--color2);
+  }
+  
+  footer em {
+    color: white;
+  }
