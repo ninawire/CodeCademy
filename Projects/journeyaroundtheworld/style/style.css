@@ -13,7 +13,117 @@
     --color5: #15141F;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    background-color: var(--color1);
+    color: white;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 15% 25% 25% 35%;
+    grid-template-areas: 
+    "img ul"
+    "title title"
+    "content content"
+    "button .";
+}
+
+#div1 {
+    background-color: var(--color1);
+    grid-area: img;
+    width: 100%;
+}
+
+#div1 img {
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+#div2 {
+    background-color: var(--color1);
+    grid-area: ul;
+    width: 100%;
+    text-align: right;
+}
+
+#div2 ul {
+    margin-top: 15px;
+}
+
+#div2 li {
+    display: inline;
+    padding: 10px;
+}
+
+#div3 {
+    grid-area: title;
+    max-width: 400px;
+    padding-left: 30px;
+    line-height: 43px;
+}
+
+#div3 h1 {
+    color: var(--color2);
+    font-family: var(--font2);
+    font-size: 50px;
+}
+
+#div3 span {
+    color: var(--color3);
+}
+
+#div4 {
+    grid-area: content;
+}
+
+#div4 p {
+    color: var(--color2);
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+button {
+    color: var(--color3);
+    background-color: transparent;
+    border: 1px solid var(--color3);
+    padding: 20px 30px;
+}
+
+#div5 {
+    padding: 20px 30px;
+}
+
+@media (min-width: 760px) {
+    #header {
+        grid-template-rows: 1fr 200px 1fr 1fr;
+    }
+
+    #div3 {
+        max-width: 800px;
+        padding-left: 30px;
+    }
+
+    #div3 h1 {
+        color: var(--color2);
+        font-family: var(--font2);
+        font-size: 100px;
+        line-height: 85px;
+    }
+
+    #div4 p {
+        max-width: 750px;
+    }
+
+    #div5 {
+        padding: 0px 30px;
+    }
 }
