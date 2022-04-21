@@ -89,6 +89,7 @@ a {
     color: var(--color2);
     padding-left: 30px;
     font-size: 25px;
+    max-width: 400px;
 }
 
 button {
@@ -102,28 +103,76 @@ button {
     padding: 20px 30px;
 }
 
+#content-container {
+    width: 366px;
+    position: relative;
+    top: -50px;
+    margin: auto;
+}
+
+#content-container img {
+    padding-bottom: 30px;
+}
+
+/*media query section*/
+
 @media (min-width: 760px) {
     #header {
         grid-template-rows: 1fr 200px 1fr 1fr;
     }
-
     #div3 {
         max-width: 800px;
         padding-left: 30px;
     }
-
     #div3 h1 {
         color: var(--color2);
         font-family: var(--font2);
         font-size: 100px;
         line-height: 85px;
     }
-
     #div4 p {
         max-width: 750px;
     }
-
     #div5 {
         padding: 0px 30px;
+    }
+    #content-container {
+        width: 740px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    
+}
+
+@media (min-width: 1100px) {
+    #header {
+        grid-template-rows: 1fr 200px 1fr 1fr;
+    }
+    #div3 {
+        max-width: 800px;
+        padding-left: 30px;
+    }
+    #div3 h1 {
+        color: var(--color2);
+        font-family: var(--font2);
+        font-size: 100px;
+        line-height: 85px;
+    }
+    #div4 p {
+        max-width: 750px;
+    }
+    #div5 {
+        padding: 0px 30px;
+    }
+    #content-container {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
     }
 }
