@@ -138,6 +138,52 @@ button {
     font-size: 15px;
 }
 
+#about-me {
+    text-align: center;
+    color: var(--color4);
+    position: relative;
+    top: -50px;
+}
+
+#about-me h2,
+#contact h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#about-me p {
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-indent: 30px;
+}
+
+#contact {
+    color: var(--color2);
+    text-align: center;
+    background-color: var(--color1);
+    padding: 80px 20px 20px 0px;
+}
+
+#contact p {
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+input,
+textarea {
+    padding: 20px 200px 20px 15px;
+    border: none;
+    margin: 10px;
+    color: grey;
+    background-color: var(--color5);
+}
+
+#send-contact {
+    position: relative;
+    left: -110px;
+}
 /*media query section 760px*/
 
 @media (min-width: 760px) {
@@ -176,6 +222,7 @@ button {
     }
 }
 
+
 /*media query section 1200px*/
 
 @media (min-width: 1200px) {
@@ -208,5 +255,15 @@ button {
     }
     #hide {
         display: inline;
+    }
+    #about-me p {
+        font-size: 22px;
+        text-indent: 0;
+        text-align: center;
+    }
+    #contact p {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px 30px;
     }
 }
