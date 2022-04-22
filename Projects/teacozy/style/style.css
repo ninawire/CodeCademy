@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+header {
+    background-color: black;
+    height: 69px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+
+header > img {
+    height: 50px;
+}
+
+ul {
+    position: relative;
+    left: 800px; 
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+.banner {
+    background: url(../material/pic5.png) center center no-repeat;
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+}
+
+.banner h2 {
+    background-color: black;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+}
+
+.banner h4 {
+    background: black;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+}
+
+#featured-tea {
+    padding: 50px;
+}
+
+.imagens {
+    height: 200px;
+    width: 300px;
+    padding: 0px 25px;
+}
+
+figure {
+    display: inline-block;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background: url(../material/pic4.png);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#h-local {
+    position: relative;
+    top: 100px;
+}
+
+.locations {
+    width: 300px;
+    background-color: black;
+    opacity: 1;
+    height: 250px;
+}
+
+.locations h4,
+.locations h5 {
+    padding: 20px;
+}
+
+#contact {
+    height: 200px;
+}
+
+#contact h2,
+#contact h5 {
+    padding: 20px;
+}
+
+footer {
+    text-align: left;
+}
+
+footer h5 {
+    padding: 20px;
+}
