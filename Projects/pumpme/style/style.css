@@ -195,6 +195,52 @@ img {
     }
 }
 
+#locations {
+    text-align: center;
+    padding: 20px;
+}
+
+#locations h3 {
+    color: var(--color3);
+    font-family: var(--font1);
+    font-size: 30px;
+}
+
+#locations h4 {
+    font-family: var(--font2);
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#locations p {
+    font-family: var(--font2);
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#add1 {
+    color: var(--color1);
+    width: 300px;
+    border: 1px solid var(--color1);
+    margin: 10px auto;
+}
+
+#add2 {
+    width: 300px;
+    border: 1px solid var(--color2);
+    margin: 10px auto;
+    color: var(--color2);
+}
+
+footer {
+    text-align: center;
+}
+
+footer img{
+    display: inline-block;
+}
 /*Media query for 1000px*/
 
 @media (min-width: 1000px) {
@@ -215,6 +261,12 @@ img {
 
     #team {
         margin: auto;
+    }
+
+    #add1,
+    #add2 {
+        display: inline-block;
+        margin: 20px;
     }
 
 }
