@@ -18,9 +18,143 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #main {
     background: var(--color3) url(../material/backgroundfull.png) center center no-repeat;
     height: 667px;
 }
 
+nav {
+    background-color: var(--color3);
+    position: absolute;
+}
 
+nav img {
+    position: relative;
+    left: 170px;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+ul {
+    text-align: center;
+    padding-top: 30px;
+    display: none;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-family: var(--font2);
+    color: var(--color1);
+    font-size: 30px;
+    line-height: 60px;
+}
+
+#container {
+    background-color: var(--color1);
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    top: 30%;
+}
+
+#container-contact {
+    background-color: var(--color1);
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+
+.contacts {
+    padding: 20px;
+    width: 60px;
+}
+
+.skills {
+    padding: 20px;
+    width: 50px;
+}
+
+#mypic {
+    width: 200px;
+    border-radius: 300px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+#container figcaption {
+    text-align: center;
+    position: relative;
+    top: 70px;
+    color: var(--color4);
+    font-family: var(--font2);
+    font-size: 35px;
+}
+
+#container h2 {
+    text-align: center;
+    position: relative;
+    top: 80px;
+    color: var(--color4);
+    font-family: var(--font1);
+}
+
+@media (min-width: 500px) {
+    nav {
+        left: 30%;
+    }
+
+    ul {
+        position: relative;
+        left: 20px;
+    }
+    #main {
+        height: 625px;
+    }
+
+    #container {
+        width: 500px;
+        height: 450px;
+        top: 15%;
+    }
+
+    #container-contact {
+        width: 500px;
+        height: 450px;
+        top: 15%;
+    }
+
+    nav img {
+        left: 250px;
+    }
+
+    li {
+        line-height: normal;
+    }
+
+    .contacts {
+        padding: 20px 50px;
+        width: 80px;
+        margin-top: 20px;
+    }
+
+    .skills {
+        padding: 20px 30px;
+        width: 80px;
+        margin-top: 20px;
+    }
+    
+}
