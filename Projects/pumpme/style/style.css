@@ -71,6 +71,7 @@ li {
     font-size: 20px;
     color: var(--color1);
     margin: 0;
+    background-color: var(--color4);
 }
 
 nav:hover {
@@ -90,6 +91,7 @@ nav:hover ul {
     width: 350px;
     text-align: center;
     padding: 30px 20px;
+    margin-left: 50px;
 }
 
 #mission q {
@@ -277,6 +279,7 @@ footer img{
     #mission {
         width: 1000px;
         font-size: 36px;
+        margin-left: 150px;
     }
 
     li {
