@@ -105,36 +105,101 @@ img {
     margin: auto;
 }
 
-#act-1 {
+#act-1,
+#act-3 {
     text-align: center;
     width: 430px;
     background-color: var(--color1);
     padding: 10px;
     margin: 10px auto;
-    color: var(--color3);
+    color: var(--color4);
 }
 
-#act-1 h3 {
-
-}
-
-#act-1 p {
+#act-1 p,
+#act-3 p {
     padding-top: 10px;
 }
 
+.group-act,
+.altern-act {
+    font-family: var(--font1);
+    color: var(--color3);
+    font-size: 18px;
+}
+
+#act-2 {
+    text-align: center;
+    width: 430px;
+    background-color: var(--color2);
+    padding: 10px;
+    margin: 10px auto;
+    color: var(--color4);
+}
+
+#act-2 p {
+    padding-top: 10px;
+}
+
+.solo-act {
+    font-family: var(--font1);
+    color: var(--color1);
+    font-size: 18px;
+}
+
+#team {
+    color: var(--color1);
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#team q {
+    color: var(--color2);
+}
+
+#team p {
+    padding-top: 20px;
+}
+
+.team-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+}
+
+
 /*Media query for 700px*/
 
-@media (min-width: 700px) {
+@media (min-width: 820px) {
     #mission {
         width: 500px;
         font-size: 24px;
+    }
+
+    #act-1,
+    #act-2,
+    #act-3 {
+        width: 780px;
+    }
+
+    #act-1 h3,
+    #act-2 h3,
+    #act-3 h3 {
+        font-size: 30px;
+    }
+
+    #act-1 p,
+    #act-2 p,
+    #act-3 p {
+        font-size: 22px;
     }
 }
 
 /*Media query for 1000px*/
 
 @media (min-width: 1000px) {
-    #mission {
+    #mission,
+    #team {
         width: 800px;
         font-size: 30px;
     }
@@ -142,6 +207,16 @@ img {
     li {
         font-size: 26px;
     }
+
+    .team-pics {
+        width: 800px;
+        margin: auto;
+    }
+
+    #team {
+        margin: auto;
+    }
+
 }
 
 /*Media query for 1200px*/
