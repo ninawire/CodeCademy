@@ -23,67 +23,58 @@ a {
     color: inherit;
 }
 
+h3 {
+    font-family: var(--font1);
+    font-size: 1.5em;
+}
+
+p {
+    font-family: var(--font1);
+    font-size: 1.4em;
+    padding: 20px;
+}
+
 #main {
     background: var(--color3) url(../material/backgroundfull.png) center center no-repeat;
-    height: 667px;
+    height: 100vh;
 }
 
 nav {
-    background-color: var(--color3);
+    background-color: transparent;
     position: absolute;
+    display: grid;
+    grid-template-columns: 100vw;
+    justify-items: center;
+    align-items: center;
 }
 
-nav img {
-    position: relative;
-    left: 170px;
-}
-
-nav:hover ul {
+nav:hover #nav-ul {
     display: block;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    font-family: var(--font2);
+    color: var(--color1);
+    font-size: 28px;
 }
 
-ul {
-    text-align: center;
-    padding-top: 30px;
+#nav-ul {
     display: none;
 }
 
-li {
-    display: inline;
+#nav-ul li {
+    display: inline-block;
     padding: 10px;
-    font-family: var(--font2);
-    color: var(--color1);
-    font-size: 30px;
-    line-height: 60px;
 }
 
 #container {
     background-color: var(--color1);
-    width: 300px;
-    height: 350px;
+    width: 80vw;
+    height: 450px;
     margin: auto;
     position: relative;
-    top: 30%;
-}
-
-#container-contact {
-    background-color: var(--color1);
-    width: 300px;
-    height: 350px;
-    margin: auto;
-    position: relative;
-    top: 30%;
+    top: 20%;
+    color: var(--color4);
     text-align: center;
-}
-
-.contacts {
-    padding: 20px;
-    width: 60px;
-}
-
-.skills {
-    padding: 20px;
-    width: 50px;
 }
 
 #mypic {
@@ -92,69 +83,59 @@ li {
     display: block;
     margin: auto;
     position: relative;
-    top: 50px;
+    top: 10%;
 }
 
 #container figcaption {
-    text-align: center;
     position: relative;
-    top: 70px;
-    color: var(--color4);
+    top: 15%;
     font-family: var(--font2);
     font-size: 35px;
 }
 
 #container h2 {
-    text-align: center;
     position: relative;
-    top: 80px;
-    color: var(--color4);
+    top: 20%;
     font-family: var(--font1);
 }
 
+.contacts {
+    padding: 20px;
+    width: 33%;
+    max-width: 100px;
+}
+
+.skills {
+    padding: 20px;
+    width: 15%;
+    max-width: 100px;
+}
+
+.about-me {
+    padding: 8px;
+    font-size: 1em;
+}
+
 @media (min-width: 500px) {
-    nav {
-        left: 30%;
+    .about-me {
+        padding: 12px;
+        font-size: 1.1em;
     }
+}
 
-    ul {
-        position: relative;
-        left: 20px;
-    }
-    #main {
-        height: 625px;
-    }
-
-    #container {
-        width: 500px;
-        height: 450px;
-        top: 15%;
-    }
-
-    #container-contact {
-        width: 500px;
-        height: 450px;
-        top: 15%;
-    }
-
-    nav img {
-        left: 250px;
-    }
-
-    li {
-        line-height: normal;
-    }
-
+@media (min-width: 535px) {
     .contacts {
         padding: 20px 50px;
-        width: 80px;
-        margin-top: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    #container {
+        width: 600px;
     }
 
-    .skills {
-        padding: 20px 30px;
-        width: 80px;
-        margin-top: 20px;
+    .about-me {
+        padding: 15px;
+        font-size: 1.3em;
     }
-    
 }
